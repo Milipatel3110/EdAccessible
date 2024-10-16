@@ -1,0 +1,83 @@
+/* Container for Courses */
+.courses-container {
+  padding: 20px;
+}
+
+/* Section Title */
+.courses-section-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #6C63FF;
+}
+
+/* Grid Layout for Courses */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Individual Course Card */
+.course-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Course Name */
+.course-name {
+  font-weight: bold;
+  background-color: #9a2e9a;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Course Title */
+.course-title {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Video Section */
+.video-section {
+  margin-bottom: 15px;
+}
+
+.video-section iframe {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Course Actions (Buttons) */
+.course-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.signup-button {
+  flex: 1;
+  background-color: #6C63FF;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-button:hover {
+  background-color: #504AC5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+}

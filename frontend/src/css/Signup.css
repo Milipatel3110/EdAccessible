@@ -1,0 +1,104 @@
+/* Container */
+.signup-container {
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: rgba(238, 174, 202, 0.3); /* Light pink-purple background */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title Styling */
+.signup-title {
+  font-size: 28px;
+  color: white; /* White text on purple */
+  margin-bottom: 15px;
+  background-color: #9a2e9a; /* Purple background */
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Form Styling */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Gap between form fields */
+  width: 100%;
+}
+
+/* Form Row */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Gap between input fields */
+}
+
+/* Form Group Styling */
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 3px; /* Label margin */
+  color: #333;
+  text-align: left;
+}
+
+/* Input Fields Styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  outline: none;
+  width: 100%;
+  height: 45px; /* Height for uniformity */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+select:focus {
+  border-color: #bc7fbc; /* Purple border on focus */
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #906cbb;
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.submit-btn:hover {
+  background-color: #784a7b;
+}
+
+/* General Adjustments */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+  font-size: 16px;
+}
+
+.signup-form label {
+  font-size: 16px; /* Slightly larger label font */
+}

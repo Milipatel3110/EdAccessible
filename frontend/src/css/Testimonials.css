@@ -1,0 +1,195 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  .testimonials-page {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .testimonials-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  /* Testimonials Container */
+  .testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .testimonial-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(33% - 20px); /* Three cards per row */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .testimonial-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #6a0dad;
+  }
+  
+  .testimonial-text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .testimonial-card ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .testimonial-card ul li {
+    margin-bottom: 8px;
+  }
+  
+  /* Add Testimonial Button */
+  .add-testimonial-button {
+    background-color: #6a0dad;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-testimonial-button:hover {
+    background-color: #7c00ff;
+  }
+  
+  /* Add Testimonial Form */
+  .add-testimonial-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-testimonial-form input,
+  .add-testimonial-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .add-testimonial-form input::placeholder,
+  .add-testimonial-form textarea::placeholder {
+    color: #aaa;
+  }
+  
+  .add-testimonial-form textarea {
+    height: 120px;
+    resize: vertical; /* Allow resizing only vertically */
+  }
+  
+  .add-testimonial-form button {
+    background-color: #6a0dad;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-testimonial-form button:hover {
+    background-color: #7c00ff;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 1024px) {
+    .testimonial-card {
+      flex-basis: calc(50% - 20px); /* Two cards per row */
+    }
+  
+    .testimonials-container {
+      gap: 15px;
+    }
+  
+    .testimonial-card h3 {
+      font-size: 1.3rem;
+    }
+  
+    .add-testimonial-form {
+      max-width: 80%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .testimonial-card {
+      flex-basis: 100%; /* One card per row */
+    }
+  
+    .testimonial-card h3 {
+      font-size: 1.2rem;
+    }
+  
+    .testimonial-card ul li {
+      font-size: 0.85rem;
+    }
+  
+    .add-testimonial-form {
+      max-width: 100%;
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .testimonial-card h3 {
+      font-size: 1rem;
+    }
+  
+    .add-testimonial-button {
+      padding: 10px;
+      font-size: 1rem;
+    }
+  
+    .add-testimonial-form {
+      padding: 15px;
+    }
+  
+    .add-testimonial-form input,
+    .add-testimonial-form textarea {
+      padding: 10px;
+    }
+  
+    .add-testimonial-form button {
+      padding: 10px;
+      font-size: 1rem;
+    }
+  }
+  
